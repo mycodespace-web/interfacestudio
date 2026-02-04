@@ -390,10 +390,10 @@
                                     <div class="flex items-center gap-2 mb-4">
                                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                                         <span class="text-xs font-medium text-emerald-600 uppercase tracking-wide">
-                                            <span data-lang="es">Proximamente</span>
-                                            <span data-lang="en" class="hidden">Coming Soon</span>
-                                            <span data-lang="fr" class="hidden">Bientôt</span>
-                                            <span data-lang="da" class="hidden">Kommer snart</span>
+                                            <span data-lang="es">En curso</span>
+                                            <span data-lang="en" class="hidden">On View</span>
+                                            <span data-lang="fr" class="hidden">En cours</span>
+                                            <span data-lang="da" class="hidden">Aktuel</span>
                                         </span>
                                     </div>
                                     <h3 class="text-2xl md:text-3xl font-display font-medium text-neutral-900 mb-3 leading-tight">
@@ -405,7 +405,11 @@
                                     
                                     <div class="flex flex-col gap-2 text-sm text-neutral-500 font-medium mb-6">
                                         <div class="flex items-center gap-2">
-                                        
+                                            <iconify-icon icon="solar:calendar-linear" class="text-neutral-400"></iconify-icon>
+                                            <span data-lang="es">11 Marzo 2026 - 11 Junio 2026</span>
+                                            <span data-lang="en" class="hidden">March 11, 2026 - June 11, 2026</span>
+                                            <span data-lang="fr" class="hidden">11 Mars 2026 - 11 Juin 2026</span>
+                                            <span data-lang="da" class="hidden">11. Marts 2026 - 11. Juni 2026</span>
                                         </div>
                                         <div class="flex items-start gap-2">
                                             <iconify-icon icon="solar:map-point-linear" class="text-neutral-400 mt-0.5"></iconify-icon>
@@ -413,11 +417,72 @@
                                         </div>
                                     </div>
 
-                             
-                                
+                                    <div class="text-neutral-600 font-light leading-relaxed">
+                                        <p data-lang="es" class="">Una pausa crítica en un presente saturado de imágenes, datos y estímulos. El tiempo de la interferencia es una exposición colectiva internacional que propone una pausa crítica en un presente saturado de imágenes, datos y estímulos. El proyecto parte del ensayo homónimo del artista e investigador leonés Jorge Quijano Ahijado, que articula la interferencia como estrategia perceptiva, estética y crítica.</p>
+                                        <p data-lang="en" class="hidden">A critical pause in a present saturated with images, data, and stimuli. The Time of Interference is an international group exhibition proposing a critical pause in a present saturated with images, data, and stimuli. The project stems from the homonymous essay by Leonese artist and researcher Jorge Quijano Ahijado, articulating interference as a perceptual, aesthetic, and critical strategy.</p>
+                                        <p data-lang="fr" class="hidden">Une pause critique dans un présent saturé d'images, de données et de stimuli. Le temps de l'interférence est une exposition collective internationale proposant une pause critique dans un présent saturé d'images, de données et de stimuli. Le projet part de l'essai homonyme de l'artiste et chercheur léonais Jorge Quijano Ahijado, articulant l'interférence comme stratégie perceptive, esthétique et critique.</p>
+                                        <p data-lang="da" class="hidden">En kritisk pause i en nutid mættet med billeder, data og stimuli. Interferensens tid er en international gruppeudstilling, der foreslår en kritisk pause i en nutid mættet med billeder, data og stimuli. Projektet udspringer af det homonyme essay af den leonesiske kunstner og forsker Jorge Quijano Ahijado, der artikulerer interferens som en perceptuel, æstetisk og kritisk strategi.</p>
+                                    </div>
+
+                                    <button onclick="toggleEvent()" class="group flex gap-2 hover:border-neutral-900 transition-all cursor-pointer select-none text-sm font-medium text-neutral-900 w-fit border-transparent border-b mt-6 gap-x-2 gap-y-2 items-center">
+                                        <span id="btn-text-open" class="">
+                                            <span data-lang="es" class="">Leer más</span>
+                                            <span data-lang="en" class="hidden">Read more</span>
+                                            <span data-lang="fr" class="hidden">Lire la suite</span>
+                                            <span data-lang="da" class="hidden">Læs mere</span>
+                                        </span>
+                                        <span id="btn-text-close" class="hidden">
+                                            <span data-lang="es">Cerrar</span>
+                                            <span data-lang="en" class="hidden">Close</span>
+                                            <span data-lang="fr" class="hidden">Fermer</span>
+                                            <span data-lang="da" class="hidden">Luk</span>
+                                        </span>
+                                        <iconify-icon id="event-toggle-icon" icon="solar:alt-arrow-down-linear" class="transition-transform duration-300"></iconify-icon>
+                                    </button>
+                                </div>
                             </div>
 
-                          
+                            <!-- Collapsible Content -->
+                            <div id="event-content" class="accordion-content">
+                                <div class="pt-8 mt-8 border-t border-neutral-100 prose prose-neutral max-w-none prose-p:font-light prose-p:text-neutral-600 prose-p:leading-relaxed">
+                                    <div data-lang="es">
+                                        <p>En un presente hiperconectado, la percepción se convierte en campo de batalla. La visualidad —ese flujo constante de imágenes, estímulos, datos y señales— no solo conforma lo que vemos, sino cómo habitamos el tiempo. Frente a esa saturación, esta exposición propone una estrategia: interferir.</p>
+                                        <p>Interferir no es bloquear, sino introducir un desfase. Una pausa. Un ruido en la señal. En ese gesto mínimo —una disonancia, una alteración— se abre una grieta por donde entra otra forma de mirar, de sentir, de pensar.</p>
+                                        <p> es una exposición colectiva internacional que parte del ensayo homónimo del artista e investigador leonés Jorge Quijano Ahijado. Desde ese punto de partida, la muestra explora la interferencia como estrategia formal, sensorial y política: no como interrupción, sino como apertura; no como falla, sino como umbral.</p>
+                                        <p>En un presente donde lo visible está saturado y lo audible se desborda, estas obras no se proponen como soluciones, sino como distorsiones. Cada una de ellas interfiere con las lógicas dominantes de la imagen, del lenguaje o del tiempo.</p>
+                                        <p>Las obras reunidas no comparten una estética, sino una actitud: la voluntad de interferir, de interrumpir los automatismos de la mirada y del pensamiento, invocando otras formas de estar en el presente sin obedecer su lógica de velocidad, control o transparencia.</p>
+                                        <p>Desde León, ciudad periférica y nodal a la vez, este proyecto se abre al diálogo internacional con artistas que desestabilizan los formatos, los relatos y los códigos de lo visible. Frente al presente como saturación, proponemos la interferencia como estrategia sensible, crítica y política.</p>
+                                    </div>
+                                    <div data-lang="en" class="hidden">
+                                        <p>In a hyperconnected present, perception becomes a battlefield. Visuality—that constant flow of images, stimuli, data, and signals—shapes not only what we see but how we inhabit time. Faced with this saturation, this exhibition proposes a strategy: to interfere.</p>
+                                        <p>To interfere is not to block, but to introduce a phase shift. A pause. A noise in the signal. In that minimal gesture—a dissonance, an alteration—a crack opens through which another way of looking, feeling, and thinking enters.</p>
+                                        <p> is an international group exhibition that stems from the homonymous essay by Leonese artist and researcher Jorge Quijano Ahijado. From that starting point, the show explores interference as a formal, sensory, and political strategy: not as an interruption, but as an opening; not as a failure, but as a threshold.</p>
+                                        <p>In a present where the visible is saturated and the audible overflows, these works are not proposed as solutions, but as distortions. Each one interferes with the dominant logics of the image, language, or time.</p>
+                                        <p>The gathered works do not share an aesthetic, but an attitude: the will to interfere, to interrupt the automatisms of gaze and thought, invoking other ways of being in the present without obeying its logic of speed, control, or transparency.</p>
+                                        <p>From León, a city both peripheral and nodal, this project opens up to international dialogue with artists who destabilize formats, narratives, and codes of the visible. Against the present as saturation, we propose interference as a sensitive, critical, and political strategy.</p>
+                                    </div>
+                                    <div data-lang="fr" class="hidden">
+                                        <p>Dans un présent hyperconnecté, la perception devient un champ de bataille. La visualité —ce flux constant d'images, de stimuli, de données et de signaux— façonne non seulement ce que nous voyons, mais aussi comment nous habitons le temps. Face à cette saturation, cette exposition propose une stratégie : interférer.</p>
+                                        <p>Interférer n'est pas bloquer, mais introduire un décalage. Une pause. Un bruit dans le signal. Dans ce geste minime —une dissonance, une altération— s'ouvre une brèche par où entre une autre façon de regarder, de sentir, de penser.</p>
+                                        <p> est une exposition collective internationale qui part de l'essai homonyme de l'artiste et chercheur léonais Jorge Quijano Ahijado. De ce point de départ, l'exposition explore l'interférence comme stratégie formelle, sensorielle et politique : non comme interruption, mais comme ouverture ; non comme échec, mais comme seuil.</p>
+                                        <p>Dans un présent où le visible est saturé et l'audible déborde, ces œuvres ne se proposent pas comme des solutions, mais comme des distorsions. Chacune d'elles interfère avec les logiques dominantes de l'image, du langage ou du temps.</p>
+                                        <p>Les œuvres réunies ne partagent pas une esthétique, mais une attitude : la volonté d'interférer, d'interrompre les automatismes du regard et de la pensée, invoquant d'autres façons d'être au présent sans obéir à sa logique de vitesse, de contrôle ou de transparence.</p>
+                                        <p>Depuis León, ville à la fois périphérique et nodale, ce projet s'ouvre au dialogue international avec des artistes qui déstabilisent les formats, les récits et les codes du visible. Face au présent comme saturation, nous proposons l'interférence comme stratégie sensible, critique et politique.</p>
+                                    </div>
+                                    <div data-lang="da" class="hidden">
+                                        <p>I en hyperforbundet nutid bliver perception en slagmark. Visualitet — den konstante strøm af billeder, stimuli, data og signaler — former ikke kun det, vi ser, men også hvordan vi bebor tiden. Stillet over for denne mætning foreslår denne udstilling en strategi: at gribe ind.</p>
+                                        <p>At gribe ind er ikke at blokere, men at introducere en forskydning. En pause. En støj i signalet. I denne minimale gestus — en dissonans, en ændring — åbner der sig en sprække, hvorigennem en anden måde at se, føle og tænke på trænger ind.</p>
+                                        <p> er en international gruppeudstilling, der udspringer af det homonyme essay af den leonesiske kunstner og forsker Jorge Quijano Ahijado. Fra dette udgangspunkt udforsker udstillingen interferens som en formel, sensorisk og politisk strategi: ikke som en afbrydelse, men som en åbning; ikke som en fejl, men som en tærskel.</p>
+                                        <p>I en nutid, hvor det synlige er mættet, og det hørbare flyder over, foreslås disse værker ikke som løsninger, men som forvrængninger. Hver især griber de ind i billedets, sprogets eller tidens dominerende logikker.</p>
+                                        <p>De samlede værker deler ikke en æstetik, men en holdning: viljen til at gribe ind, til at afbryde blikkets og tankens automatismer og påkalde andre måder at være i nutiden på uden at adlyde dens logik om hastighed, kontrol eller gennemsigtighed.</p>
+                                        <p>Fra León, en by der er både perifer og nodal, åbner dette projekt op for international dialog med kunstnere, der destabiliserer formater, fortællinger og koder for det synlige. Imod nutiden som mætning foreslår vi interferens som en følsom, kritisk og politisk strategi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
